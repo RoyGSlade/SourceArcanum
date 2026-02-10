@@ -90,8 +90,8 @@ function injectLayout() {
         footerContainer.innerHTML = `
         <div class="container" style="padding: 4rem 0; border-top: 1px solid var(--stone-dark); margin-top: 4rem; text-align: center;">
             <div class="brand-sigil" style="margin: 0 auto 2rem auto;"></div>
-            <p class="mono" style="color: var(--text-muted); font-size: 0.9rem;">SOURCE ARCANUM // EST. 2025</p>
-            <p class="mono" style="color: var(--tech-cyan); font-size: 0.8rem; margin-top: 1rem;">LOCAL-FIRST. FREE FOREVER. DONATION-STEERED. NO TELEMETRY.</p>
+            <p class="mono" style="color: var(--text-muted); font-size: 0.9rem;">SOURCE ARCANUM // EST. 2026</p>
+            <p class="mono" style="color: var(--tech-cyan); font-size: 0.8rem; margin-top: 1rem;">LOCAL-FIRST. FREE FOREVER. <a href="https://ko-fi.com/democratizegm" target="_blank" style="color: var(--accent-gold); text-decoration: none; border-bottom: 1px dotted var(--accent-gold);">DONATION-STEERED</a>. NO TELEMETRY.</p>
         </div>`;
     }
 }

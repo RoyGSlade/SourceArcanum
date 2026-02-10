@@ -146,7 +146,7 @@
     "id": "dungeon-creator",
     "realName": "Deep Stone",
     "codename": "Deep Stone",
-    "category": "tools",
+    "category": "productivity",
     "status": "concept",
     "statusLabel": "UNMINED",
     "tagline": "Automated 2D top-down map creator for worlds.",
@@ -298,7 +298,8 @@
     "flavorDescription": "The architecture of the multiverse laid bare, granting you the power to weave destiny across stars and centuries without the chains of class or era.",
     "fullDescription": [
       "*Infinite Ages Genesis* is a world simulation and narrative storytelling engine that breaks the mold of traditional TTRPGs. It is a completely classless system designed for player-driven and GM-driven storytelling, set within the vast \"USSI\" framework. This setting allows Game Masters to drop players into literally *any* world they can imagine—whether it's a grit-filled medieval planet, a sleek modern metropolis, a colonial frontier, or a chaotic sci-fi pirate flotilla—all while keeping the core mechanics consistent.",
-      "The system distinguishes itself with a unique \"learning by doing\" progression. Instead of arbitrary experience points, your character evolves through action. Utilize your \"Artist\" or \"Athlete\" skills, or engage in charisma-based diplomacy; success grants skill levels, which in turn drive your overall character level, PowerPoints, and HP. With 10 distinct superpowers featuring massive skill trees, a deep cybernetics system, comprehensive crafting, and a unique combat flow using a full 7-dice set (d20-d100), it offers a depth of play that is expansive yet manageable."
+      "The system distinguishes itself with a unique \"learning by doing\" progression. Instead of arbitrary experience points, your character evolves through action. Utilize your \"Artist\" or \"Athlete\" skills, or engage in charisma-based diplomacy; success grants skill levels, which in turn drive your overall character level, PowerPoints, and HP. With 10 distinct superpowers featuring massive skill trees, a deep cybernetics system, comprehensive crafting, and a unique combat flow using a full 7-dice set (d20-d100), it offers a depth of play that is expansive yet manageable.",
+      "**NOTE:** Demo videos and project images coming soon. Character sheets will be available in February 2026."
     ],
     "features": [
       "Classless Progression:: Build exactly the character you want without arbitrary restrictions.",
@@ -318,7 +319,7 @@
     "roadmap": {
       "nearTerm": [
         "GM Guide:: A comprehensive manual for running operations in the USSI.",
-        "Online Character Sheet:: A web-based, manageable sheet for tracking the complex stats and skill trees.",
+        "Online Character Sheet:: A web-based, manageable sheet for tracking the complex stats and skill trees (Feb 2026).",
         "Campaign Module:: A starter adventure to introduce players to the mechanics and setting."
       ],
       "midTerm": [
@@ -342,8 +343,8 @@
         "type": "github"
       },
       {
-        "label": "Releases",
-        "url": "",
+        "label": "Download TTRPG",
+        "url": "assets/InfiniteAgesGenesis.pdf",
         "type": "download"
       },
       {

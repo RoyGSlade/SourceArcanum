@@ -12,7 +12,7 @@
             "links": [
                 {
                     "label": "Ko-fi",
-                    "url": "https://ko-fi.com/sourcearcanum",
+                    "url": "https://ko-fi.com/democratizegm",
                     "type": "fiat"
                 },
                 {
@@ -32,8 +32,8 @@
             "priorityRank": 2,
             "links": [
                 {
-                    "label": "Sponsor",
-                    "url": "https://github.com/sponsors/sourcearcanum",
+                    "label": "GitHub (Soon)",
+                    "url": "https://github.com/sourcearcanum",
                     "type": "github"
                 }
             ]
