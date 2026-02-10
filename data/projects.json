@@ -1,6 +1,7 @@
 [
   {
     "id": "betterfingers",
+    "featured": true,
     "realName": "BetterFingers",
     "codename": "Sigil Script",
     "category": "productivity",
@@ -72,6 +73,7 @@
   },
   {
     "id": "dream-tool",
+    "featured": false,
     "realName": "Dream Tool",
     "codename": "Oneiromancy",
     "category": "productivity",
@@ -144,6 +146,7 @@
   },
   {
     "id": "dungeon-creator",
+    "featured": false,
     "realName": "Deep Stone",
     "codename": "Deep Stone",
     "category": "productivity",
@@ -216,6 +219,7 @@
   },
   {
     "id": "hobbies-hundreds",
+    "featured": false,
     "realName": "HobbiesToHundreds",
     "codename": "Alchemy Kit",
     "category": "finance",
@@ -288,6 +292,7 @@
   },
   {
     "id": "infinite-ages",
+    "featured": true,
     "realName": "Infinite Ages Genesis",
     "codename": "Aether Bound",
     "category": "games",
@@ -361,6 +366,7 @@
   },
   {
     "id": "pdf-manager",
+    "featured": true,
     "realName": "PDF Editor/Manager",
     "codename": "Codex Forge",
     "category": "productivity",
@@ -433,6 +439,7 @@
   },
   {
     "id": "roguelike-crawler",
+    "featured": false,
     "realName": "Roguelike Crawler",
     "codename": "Iron Descent",
     "category": "games",
@@ -504,6 +511,7 @@
   },
   {
     "id": "space-shooter",
+    "featured": false,
     "realName": "Stardust",
     "codename": "Stardust",
     "category": "games",
@@ -574,6 +582,7 @@
   },
   {
     "id": "the-account",
+    "featured": false,
     "realName": "The Accountant",
     "codename": "Ledger Zero",
     "category": "finance",
