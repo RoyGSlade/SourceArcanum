@@ -1,0 +1,69 @@
+{
+    "lastUpdatedISO": "2026-02-10T12:00:00Z",
+    "buckets": [
+        {
+            "id": "core-ops",
+            "title": "Core Operations",
+            "description": "Server costs, domain renewals, and caffeine.",
+            "goalUSD": 500,
+            "raisedUSD": 120,
+            "status": "active",
+            "priorityRank": 1,
+            "links": [
+                {
+                    "label": "Ko-fi",
+                    "url": "https://ko-fi.com/sourcearcanum",
+                    "type": "fiat"
+                },
+                {
+                    "label": "BTC",
+                    "url": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+                    "type": "crypto"
+                }
+            ]
+        },
+        {
+            "id": "betterfingers-dev",
+            "title": "BetterFingers Development",
+            "description": "Bounty for Linux window-manager integration.",
+            "goalUSD": 1000,
+            "raisedUSD": 350,
+            "status": "active",
+            "priorityRank": 2,
+            "links": [
+                {
+                    "label": "Sponsor",
+                    "url": "https://github.com/sponsors/sourcearcanum",
+                    "type": "github"
+                }
+            ]
+        },
+        {
+            "id": "dream-tool-launch",
+            "title": "Dream Tool Launch",
+            "description": "Marketing and asset creation for the initial release.",
+            "goalUSD": 200,
+            "raisedUSD": 0,
+            "status": "pending",
+            "priorityRank": 3,
+            "links": []
+        }
+    ],
+    "votes": [
+        {
+            "bucketId": "betterfingers-dev",
+            "totalVotes": 42,
+            "note": "High community demand."
+        },
+        {
+            "bucketId": "dream-tool-launch",
+            "totalVotes": 15,
+            "note": "Niche interest."
+        },
+        {
+            "bucketId": "core-ops",
+            "totalVotes": 99,
+            "note": "Essential."
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "source-arcanum-site",
+    "version": "1.0.0",
+    "description": "Static site for Source Arcanum",
+    "scripts": {
+        "build:data": "node scripts/buildProjectsJson.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

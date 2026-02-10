@@ -1,0 +1,26 @@
+[
+    {
+        "id": "2026-02-comet",
+        "dateISO": "2026-02-01",
+        "title": "The Comet is Visible",
+        "excerpt": "I looked at the stars last night. The AI singularity is no longer a theory; it is a celestial body on a collision course.",
+        "url": "posts/comet.html",
+        "projectId": null
+    },
+    {
+        "id": "2026-01-chains",
+        "dateISO": "2026-01-20",
+        "title": "Breaking the Rental Chains",
+        "excerpt": "You do not own your software. You rent it. We are building the tools to break this cycle of digital feudalism.",
+        "url": "posts/chains.html",
+        "projectId": "pdf-manager"
+    },
+    {
+        "id": "2026-01-light",
+        "dateISO": "2026-01-15",
+        "title": "A Light in the Cave",
+        "excerpt": "We call this aesthetic 'The Cave' because it represents where we are hiding from the blinding neon of the modern web.",
+        "url": "posts/light.html",
+        "projectId": "betterfingers"
+    }
+]
