@@ -6,7 +6,7 @@ Source Arcanum is a collection of local-first, privacy-focused tools designed fo
 
 ## Philosophy
 
-- **The Cave**: We reject the neon maximalism of the modern web. We build in the dark, for clarity.
+- **The Cave**: We build in the dark, for clarity.
 - **Local First**: If it can't run offline, it's not yours.
 - **Steering**: We don't take VC money. We don't run ads. Users vote on the roadmap via donations.
 
