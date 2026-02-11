@@ -32,7 +32,7 @@ async function init() {
         // Router
         const page = window.location.pathname.split('/').pop().toLowerCase();
 
-        if (page === 'index.html' || page === '' || window.location.endsWith('/')) {
+        if (page === 'index.html' || page === '' || window.location.pathname.endsWith('/')) {
             renderHome();
         } else if (page.includes('productivity')) {
             renderCategory('productivity');
@@ -69,6 +69,7 @@ function injectLayout() {
                 <a href="productivity.html">PRODUCTIVITY</a>
                 <a href="games.html">GAMES</a>
                 <a href="finance.html">FINANCIAL</a>
+                <a href="roadmap.html">ROADMAP</a>
                 <a href="support.html">SUPPORT</a>
             </div>
         </div>`;
@@ -215,6 +216,12 @@ function renderGrid(items, containerId) {
         // Safe check for stats/version if needed, though mostly in modal now
         const version = p.stats && p.stats.Version ? p.stats.Version : null;
 
+        // Check for a demo link
+        const demoLink = p.links ? p.links.find(l => l.type === 'demo' && l.url) : null;
+        const demoBtnHtml = demoLink
+            ? `<a href="${demoLink.url}" class="btn btn-primary" onclick="event.stopPropagation();" style="display:inline-block; margin-top:1rem; padding:0.6rem 1.5rem; font-size:0.75rem; text-align:center;">▶ ${demoLink.label.toUpperCase()}</a>`
+            : '';
+
         return `
         <div class="project-card" 
              role="button" 
@@ -230,6 +237,8 @@ function renderGrid(items, containerId) {
                 <div class="mono" style="font-size: 0.8rem; color: var(--accent-gold); margin-bottom: 1rem;">(Codename: ${p.codename})</div>
                 
                 <p style="margin-bottom: 1.5rem; flex-grow: 1;">${p.plainDescription}</p>
+                
+                ${demoBtnHtml}
                 
                 <div class="click-prompt" style="margin-top: auto;">
                     [ ACCESS DOSSIER ] &rarr;

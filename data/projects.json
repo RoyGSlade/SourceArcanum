@@ -574,9 +574,9 @@
         "type": "docs"
       },
       {
-        "label": "Demo",
-        "url": "",
-        "type": "video"
+        "label": "Play Demo",
+        "url": "projects/space-shooter.html",
+        "type": "demo"
       }
     ]
   },

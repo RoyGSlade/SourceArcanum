@@ -507,12 +507,18 @@ nav {
 .dossier-body {
     display: grid;
     grid-template-columns: 300px 1fr;
+    min-height: 0;
+    /* allows shrinking in grid container */
+    overflow: hidden;
+    /* ensures content doesn't spill out */
 }
 
 .dossier-sidebar {
     background: #0a090c;
     border-right: 1px solid var(--stone-dark);
     padding: 3rem 2rem;
+    overflow-y: auto;
+    /* enable scrolling for sidebar content */
 }
 
 .dossier-main {
@@ -594,10 +600,12 @@ nav {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(5px);
+    pointer-events: none;
 }
 
 .overlay.active {
     display: flex;
+    pointer-events: auto;
 }
 
 @media (max-width: 900px) {

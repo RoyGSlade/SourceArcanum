@@ -1,80 +1,168 @@
 # SOURCE ARCANUM
 
-> "Hoard nothing. Reject reliance. Build sovereignty."
+“Hoard nothing. Reject reliance. Build sovereignty.”
 
-Source Arcanum is a collection of local-first, privacy-focused tools designed for the offline era. This repository hosts the static site that serves as the distribution hub and manifesto for the project.
+Source Arcanum is a local-first umbrella: a collection of free, privacy-respecting tools designed to keep working offline, without subscriptions, accounts, or data harvesting.
 
-## Philosophy
+This repository hosts the **static GitHub Pages site** that acts as:
 
-- **The Cave**: We build in the dark, for clarity.
-- **Local First**: If it can't run offline, it's not yours.
-- **Steering**: We don't take VC money. We don't run ads. Users vote on the roadmap via donations.
+*   a manifesto + trust anchor
+*   a project library
+*   a proof-of-work archive (Chronicles)
+*   a distribution hub (downloads, docs, updates)
+*   a donation-steered roadmap board
 
-## Architecture
+## What This Is (Plain Language)
 
-This is a vanilla HTML/CSS/JS site. No build steps required for the static pages, but we use GitHub Actions for validation and deployment.
+Most modern software is a rental agreement.
 
-- `/data/*.json`: The database. All projects, posts, and funding stats live here.
-- `/scripts/script.js`: The renderer. Injects navigation, renders grids, and handles the modal logic.
-- `/posts/*.html`: Static entries for the "Chronicles" (blog).
-- `docs.html`: Central documentation hub.
+Source Arcanum exists to build the opposite: tools you can run on your machine, keep forever, and trust not to change terms later.
 
-## Managing Data
+*   No subscriptions
+*   No telemetry
+*   No accounts
+*   No cloud dependency
+*   No “free until we pivot”
 
-### Adding a Project
-1. Open `data/projects.json`.
-2. Add a new object to the array following the schema:
-   ```json
-   {
-     "id": "my-project",
-     "realName": "My Project",
-     "codename": "Project Name",
-     "status": "ALPHA",
-     "shortDesc": "One line summary.",
-     "fullDesc": "Full HTML description.",
-     "tags": ["Tool", "Local"],
-     "stats": { "Version": "1.0" },
-     "links": [ { "label": "Download", "url": "#", "type": "download" } ],
-     "roadmap": [],
-     "category": "productivity",
-     "featured": false
-   }
-   ```
-3. Commit. The site will automatically update.
+## The Pact (Core Philosophy)
 
-### Adding a Post
-1. Create a new HTML file in `/posts/`.
-2. Link `styles/styles.css` and `scripts/script.js`.
-3. Add the metadata to `data/posts.json`:
-   ```json
-   {
-     "id": "2026-new-post",
-     "dateISO": "2026-03-01",
-     "title": "New Post Title",
-     "excerpt": "Short summary...",
-     "url": "posts/new-post.html",
-     "projectId": "linked-project-id" // Optional, for changelogs
-   }
-   ```
+*   **Local-first = ownership**
+    If it can’t run offline, you don’t truly own it.
 
-### Updating Funding
-Funding data is located in `data/funding.json`.
-- **Note**: The `funding-refresh.yml` workflow runs weekly to update the `lastUpdatedISO` timestamp and validate the schema.
+*   **Free forever = trust**
+    No paywalls. No feature gating. No bait-and-switch.
+
+*   **Donations are votes**
+    Donations steer priority, not access.
+
+*   **No ads. No sponsors. No handlers.**
+    The mission stays independent.
+
+*   **Discomfort → growth**
+    The goal is capability, courage, and forward motion.
+
+*   **Build to give**
+    Decentralize tools that improve real lives.
+
+## Repository Overview
+
+This is a static site built with vanilla HTML/CSS/JS.
+
+No build step is required for the core site. GitHub Actions is used for validation and deployment.
+
+### Key paths
+
+*   `/data/`
+    The site’s database (projects, posts, funding).
+
+*   `/scripts/`
+    The renderer and UI logic (grids, navigation, dossier modal).
+
+*   `/posts/`
+    Static Chronicle entries (proof-of-work).
+
+*   `/docs/` (optional / if enabled)
+    Documentation for each project.
+
+*   `index.html`
+    The entry point for GitHub Pages.
+
+## Data Model
+
+### `data/projects.json`
+
+Defines every project shown on the site.
+
+Each project uses:
+*   Real Name (primary)
+*   Codename (secondary flavor)
+*   Status + category
+*   Features, roadmap, trust facts, and links
+
+### `data/posts.json`
+
+Defines the Chronicles feed.
+
+Posts can optionally link to a project ID for changelog-style filtering.
+
+### `data/funding.json`
+
+Defines the funding board / donation steering display.
+
+**Important:** Funding data is intentionally stored as static JSON.
+No API keys. No third-party live calls. No hidden dependencies.
+
+## Editing the Site
+
+### Add a project
+
+1.  Open `data/projects.json`
+2.  Add a new object using the existing schema
+3.  Commit to main
+
+The site will update automatically.
+
+### Add a Chronicle post
+
+1.  Create a new HTML file in `/posts/`
+2.  Add an entry to `data/posts.json`:
+
+```json
+{
+  "id": "2026-new-post",
+  "dateISO": "2026-03-01",
+  "title": "New Post Title",
+  "excerpt": "Short summary...",
+  "url": "posts/new-post.html",
+  "projectId": "linked-project-id"
+}
+```
+
+### Update the funding board
+
+Funding is stored in:
+
+`data/funding.json`
+
+If a scheduled workflow exists, it may update `lastUpdatedISO` automatically, but the values are still controlled in-repo.
+
+## Local Preview
+
+Use any static server.
+
+Example (Python):
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+`http://localhost:8000`
 
 ## Deployment
 
-The site is hosted on **GitHub Pages**.
+The site deploys via GitHub Pages.
 
-- **Workflow**: `.github/workflows/pages.yml`
-- **Trigger**: Push to `main`.
-- **Process**:
-  1. Validates JSON data (`scripts/validateData.js`).
-  2. Uploads the root directory.
-  3. Deploys to GitHub Pages.
+*   **Workflow:** `.github/workflows/pages.yml`
+*   **Trigger:** push to main
 
-## Verification
+Typical deploy steps:
+1.  Validate JSON data (`scripts/validateData.js`)
+2.  Upload the site artifact
+3.  Deploy to GitHub Pages
 
-To run the data validator locally:
+### Validation
+
+Run the data validator locally:
+
 ```bash
 node scripts/validateData.js
 ```
+
+## License
+
+This repo contains the Source Arcanum site and data.
+
+Project repos linked from this site may have their own licenses.
+Check each project for details.

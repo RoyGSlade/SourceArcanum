@@ -1,0 +1,151 @@
+{
+    "carouselOrder": [
+        "betterfingers",
+        "infinite-ages-genesis",
+        "pdf-editor"
+    ],
+    "nextFocusQueue": [
+        {
+            "projectId": "pdf-editor",
+            "note": "Updates coming soon...",
+            "etaLabel": "Soon"
+        },
+        {
+            "projectId": "the-account",
+            "note": "Updates coming soon...",
+            "etaLabel": "Later"
+        }
+    ],
+    "recentlyShippedFeed": [
+        {
+            "dateISO": "2026-02",
+            "projectId": "betterfingers",
+            "summary": "Updates coming soon...",
+            "state": "Logged"
+        },
+        {
+            "dateISO": "2026-02",
+            "projectId": "infinite-ages-genesis",
+            "summary": "Updates coming soon...",
+            "state": "Logged"
+        },
+        {
+            "dateISO": "2026-01",
+            "projectId": "pdf-editor",
+            "summary": "Updates coming soon...",
+            "state": "Logged"
+        }
+    ],
+    "projects": {
+        "betterfingers": {
+            "name": "BetterFingers",
+            "focus": {
+                "summary": "Detailed roadmap updates are currently being compiled. Please check back soon.",
+                "focusLine": "Active Development...",
+                "objective": "TBD",
+                "successCriteria": [],
+                "readinessPercent": 50,
+                "readinessLabel": "In Progress"
+            },
+            "updatePlans": [
+                {
+                    "title": "Roadmap Sync",
+                    "desc": "Detailed plans will be populated shortly.",
+                    "impact": "TBD",
+                    "effort": "TBD",
+                    "confidence": "TBD",
+                    "targetWindow": "Soon",
+                    "tags": [
+                        "Pending"
+                    ]
+                }
+            ],
+            "scopeChanges": [],
+            "kanban": {
+                "todo": [
+                    {
+                        "title": "Features TBD",
+                        "note": "Processing backlog...",
+                        "tags": [
+                            "Pending"
+                        ]
+                    }
+                ],
+                "done": []
+            }
+        },
+        "infinite-ages-genesis": {
+            "name": "Infinite Ages: Genesis",
+            "focus": {
+                "summary": "Detailed roadmap updates are currently being compiled. Please check back soon.",
+                "focusLine": "Active Development...",
+                "objective": "TBD",
+                "successCriteria": [],
+                "readinessPercent": 40,
+                "readinessLabel": "Refining"
+            },
+            "updatePlans": [
+                {
+                    "title": "Roadmap Sync",
+                    "desc": "Detailed plans will be populated shortly.",
+                    "impact": "TBD",
+                    "effort": "TBD",
+                    "confidence": "TBD",
+                    "targetWindow": "Soon",
+                    "tags": [
+                        "Pending"
+                    ]
+                }
+            ],
+            "scopeChanges": [],
+            "kanban": {
+                "todo": [
+                    {
+                        "title": "Features TBD",
+                        "note": "Processing backlog...",
+                        "tags": [
+                            "Pending"
+                        ]
+                    }
+                ],
+                "done": []
+            }
+        },
+        "pdf-editor": {
+            "name": "PDF Editor",
+            "focus": {
+                "summary": "Detailed roadmap updates are currently being compiled. Please check back soon.",
+                "focusLine": "Planning Phase...",
+                "objective": "TBD",
+                "successCriteria": [],
+                "readinessPercent": 20,
+                "readinessLabel": "Exploration"
+            },
+            "updatePlans": [
+                {
+                    "title": "Roadmap Sync",
+                    "desc": "Detailed plans will be populated shortly.",
+                    "impact": "TBD",
+                    "effort": "TBD",
+                    "confidence": "TBD",
+                    "targetWindow": "Later",
+                    "tags": [
+                        "Pending"
+                    ]
+                }
+            ],
+            "scopeChanges": [],
+            "kanban": {
+                "todo": [
+                    {
+                        "title": "Features TBD",
+                        "tags": [
+                            "Pending"
+                        ]
+                    }
+                ],
+                "done": []
+            }
+        }
+    }
+}

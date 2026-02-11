@@ -1,0 +1,60 @@
+{
+  "title": "Roadmap Game Credits",
+  "contributors": [
+    {
+      "name": "Dono",
+      "role": "Music Artist",
+      "description": "Provided royalty-free music for the game.",
+      "link": "https://artlist.io/royalty-free-music/artist/dono/1486"
+    },
+    {
+      "name": "freesound_community",
+      "role": "Sound Effect Contributor",
+      "description": "Sound effect provided by freesound_community from Pixabay.",
+      "link": "https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=102433",
+      "source": "https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=102433"
+    },
+    {
+      "name": "Danihadani",
+      "role": "Music Artist",
+      "description": "Provided royalty-free music for the game.",
+      "link": "https://artlist.io/royalty-free-music/artist/danihadani/2295"
+    },
+    {
+      "name": "DRAGON-STUDIO",
+      "role": "Sound Effect Contributor",
+      "description": "Sound effect provided by DRAGON-STUDIO from Pixabay.",
+      "link": "https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=376889",
+      "source": "https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=376889"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "role": "Voice Acting (AI)",
+      "description": "AI-generated voice acting for game characters and narration."
+    },
+    {
+      "name": "TheRealFusion",
+      "role": "Ship Asset Provider",
+      "description": "Ship assets provided by Free to Use, Free to Edit, Commercial Allowed. Credit to: TheRealFusion."
+    },
+    {
+      "name": "Raphael Hatencia",
+      "role": "Spaceship Effects Asset Provider",
+      "description": "Spaceship effects asset pack used. Credit required: Raphael Hatencia."
+    },
+    {
+      "name": "Anastasia Chubarova",
+      "role": "Music Artist",
+      "description": "Music by Anastasia Chubarova from Pixabay.",
+      "link": "https://pixabay.com/users/music_for_videos-26992513/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=145038",
+      "source": "https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=145038"
+    },
+    {
+      "name": "AllWorldMusic",
+      "role": "Music Artist",
+      "description": "Music by AllWorldMusic from Pixabay.",
+      "link": "https://pixabay.com/users/allworldmusic-46839791/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=276879",
+      "source": "https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=276879"
+    }
+  ]
+}
