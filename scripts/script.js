@@ -6,6 +6,7 @@ let PROJECTS = [];
 let POSTS = [];
 let FUNDING = {};
 let MANIFESTO = [
+    { title: "VOICE IS DATA", text: "Your voice is a biometric identifier. We process it locally. We do not send it to the cloud to be trained on." },
     { title: "LOCAL-FIRST = OWNERSHIP", text: "If it doesn’t run offline, you don’t truly own it. We build tools that still work when the cloud goes dark." },
     { title: "FREE FOREVER = TRUST", text: "No subscriptions. No paywalls. No “free until we pivot.” If it’s on this site, it stays free." },
     { title: "DONATIONS ARE VOTES", text: "You don’t pay for features. You fund the direction. Donations steer priority, not access." },
@@ -368,6 +369,15 @@ function openModal(projectId) {
             <div class="d-stat-row"><span class="d-stat-label">TELEMETRY</span><span class="d-stat-val">${tf.telemetry}</span></div>
             <div class="d-stat-row"><span class="d-stat-label">ACCOUNTS</span><span class="d-stat-val">${tf.accounts}</span></div>
             <div class="d-stat-row"><span class="d-stat-label">DATA LOC</span><span class="d-stat-val">${tf.dataStoredWhere}</span></div>
+            ${tf.integrity ? `
+            <div style="margin-top: 1.5rem; border-top: 1px dotted var(--stone-light); padding-top: 1rem;">
+                <div class="d-stat-label" style="color: var(--accent-gold); margin-bottom: 0.5rem;">// INTEGRITY CHECK</div>
+                <div class="mono" style="font-size: 0.7rem; color: var(--text-muted); word-break: break-all;">
+                    FILE: ${tf.installer || 'Unknown'}<br>
+                    SHA256: <span style="color: var(--tech-cyan);">${tf.integrity}</span>
+                </div>
+            </div>
+            ` : ''}
         `;
     }
 
