@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- components.head %>
-<body class="site-shell skin-<%= page.skin %> imported-project-page">
+<body class="site-shell skin-<%= page.skin %> imported-project-page project-<%= project.id %>">
     <div class="page-light light-source parallax" aria-hidden="true"></div>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <%- components.nav %>
@@ -15,7 +15,7 @@
                 <div class="imported-hero-copy">
                     <p class="mono imported-kicker">PROJECT SOURCE · <%= project.status.replace(/-/g, ' ').toUpperCase() %></p>
                     <h1><%= project.name %></h1>
-                    <% if (project.links.length) { %><nav class="imported-links" aria-label="Project links"><% project.links.forEach((link) => { %><a class="btn btn-primary" href="<%= link.url %>" rel="noopener noreferrer"><%= link.label %></a><% }); %></nav><% } %>
+                    <% if (project.links.length) { %><nav class="imported-links" aria-label="Project links"><% project.links.forEach((link) => { %><a class="btn btn-primary imported-link imported-link--<%= link.type || 'external' %>" href="<%= link.url %>" rel="noopener noreferrer"><% if (link.type === 'download') { %><span class="imported-download-kicker mono">Unsigned alpha · Windows 11 x64</span><% } %><span class="imported-link-label"><%= link.label %></span><% if (link.type === 'download') { %><span class="imported-download-arrow" aria-hidden="true">↘</span><% } %></a><% }); %></nav><% } %>
                 </div>
                 <aside class="imported-source-pulse" aria-label="Project source snapshot">
                     <span class="source-pulse-orbit" aria-hidden="true"></span>
@@ -38,7 +38,7 @@
                     <div class="project-showcase-stage">
                         <div class="project-showcase-track" aria-live="polite">
                             <% imported.showcase.slides.forEach((slide, slideIndex) => { %>
-                                <article class="showcase-slide showcase-slide--<%= slide.layout %><%= slideIndex === 0 ? ' is-active' : '' %>" data-showcase-slide aria-hidden="<%= slideIndex === 0 ? 'false' : 'true' %>">
+                                <article class="showcase-slide showcase-slide--<%= slide.layout %><%= slideIndex === 0 ? ' is-active' : '' %>" data-showcase-slide data-showcase-scene="<%= slide.id %>" aria-hidden="<%= slideIndex === 0 ? 'false' : 'true' %>">
                                     <header class="showcase-slide-heading">
                                         <p class="mono">Scene <%= String(slideIndex + 1).padStart(2, '0') %></p>
                                         <h3><%= slide.title %></h3>
