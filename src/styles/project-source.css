@@ -771,6 +771,85 @@
     outline-offset: 5px;
 }
 
+.project-betterfingers .imported-link--discord {
+    position: relative;
+    display: grid;
+    min-width: min(100%, 18rem);
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+        "kicker arrow"
+        "label arrow";
+    gap: 0.22rem 0.9rem;
+    padding: 0.9rem 1rem 0.95rem 1.1rem;
+    border: 2px solid rgba(0, 217, 255, 0.8);
+    border-radius: 0.3rem 0.65rem 0.45rem 0.55rem;
+    background:
+        linear-gradient(118deg, rgba(7, 7, 9, 0.96), rgba(18, 7, 19, 0.94)) padding-box,
+        linear-gradient(115deg, var(--bf-ink-blue), var(--bf-ink-pink), var(--bf-ink-yellow)) border-box;
+    box-shadow: 5px 5px 0 rgba(255, 50, 207, 0.2), 0 0 1.4rem rgba(0, 217, 255, 0.14);
+    color: #fff;
+    text-align: left;
+    transform: rotate(1deg);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.project-betterfingers .imported-link--discord::before {
+    position: absolute;
+    top: -0.55rem;
+    right: 1.3rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    content: "";
+    background: var(--bf-ink-pink);
+    box-shadow: -1.1rem 0.2rem 0 -0.06rem var(--bf-ink-blue), 1rem 0.35rem 0 -0.1rem var(--bf-ink-yellow);
+}
+
+.project-betterfingers .imported-link--discord:hover,
+.project-betterfingers .imported-link--discord:focus-visible {
+    border-color: var(--bf-ink-yellow);
+    background:
+        linear-gradient(118deg, rgba(10, 10, 12, 0.98), rgba(26, 8, 28, 0.97)) padding-box,
+        linear-gradient(115deg, var(--bf-ink-yellow), var(--bf-ink-pink), var(--bf-ink-blue)) border-box;
+    box-shadow: 7px 7px 0 rgba(255, 50, 207, 0.27), 0 0 2rem rgba(0, 217, 255, 0.24);
+    filter: saturate(1.14);
+    transform: translateY(-0.15rem) rotate(-0.5deg) scale(1.02);
+}
+
+.project-betterfingers .imported-discord-kicker {
+    grid-area: kicker;
+    color: var(--bf-ink-blue);
+    font-size: 0.59rem;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.project-betterfingers .imported-link--discord .imported-link-label {
+    grid-area: label;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 850;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 0 rgba(255, 50, 207, 0.55);
+}
+
+.project-betterfingers .imported-discord-arrow {
+    display: grid;
+    width: 2.25rem;
+    height: 2.25rem;
+    grid-area: arrow;
+    place-items: center;
+    align-self: center;
+    border: 1px solid var(--bf-ink-pink);
+    border-radius: 50%;
+    color: var(--bf-ink-pink);
+    font-size: 1.2rem;
+    box-shadow: 0 0 13px rgba(255, 50, 207, 0.22);
+}
+
 .project-betterfingers .project-showcase {
     position: relative;
     isolation: isolate;
