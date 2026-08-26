@@ -5,6 +5,7 @@ description: "Root-cause analysis, practical software, and complete implementati
 branch: "crenshaw-systems"
 skin: "crenshaw-systems"
 page_kind: "commercial-overview"
+noindex: true
 public_name: "Crenshaw Systems"
 formal_name: "Donaven Crenshaw Systems Consulting"
 hero_title: "Crenshaw Systems"

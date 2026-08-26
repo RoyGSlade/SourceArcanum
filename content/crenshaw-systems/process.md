@@ -5,6 +5,7 @@ description: "The diagnosis-first intake and $100 discovery process for Crenshaw
 branch: "crenshaw-systems"
 skin: "crenshaw-systems"
 page_kind: "commercial-process"
+noindex: true
 public_name: "Crenshaw Systems"
 formal_name: "Donaven Crenshaw Systems Consulting"
 hero_title: "Crenshaw Systems Process"

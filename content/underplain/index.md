@@ -13,7 +13,7 @@ hero_scene: "desk"
 <span class="icon-ring" aria-hidden="true">&lt;/&gt;</span>
 <div>
 <h2>underplain</h2>
-<p>underplain is the free-software branch: useful tools, source available, and MIT licensed. The software is free of charge. There are no crippled paid editions. Optional paid installation, customization, deployment, training, and support belong to <a href="../crenshaw-systems/">Crenshaw Systems</a>, not to a locked product tier.</p>
+<p>underplain is the free-software branch: useful tools, source available, and MIT licensed. The software is free of charge, and there are no crippled paid editions.</p>
 </div>
 </div>
 <div class="underplain-facts" aria-label="Underplain facts">
@@ -58,5 +58,5 @@ Support helps pay for polishing, releases, compute, hosting, signing, testing, a
 <section class="noir-card lit-edge shadow-caster underplain-section">
 <h2>Current branch boundary</h2>
 
-The tools here are public software work. Crenshaw Systems owns and delivers the optional paid services around them, including installation, customization, deployment, training, or support. That service relationship does not turn a free underplain product into a paid edition.
+The tools here are public software work. Product status, platform support, source, release evidence, and known limits are published with each tool; planned capability is not presented as shipped.
 </section>

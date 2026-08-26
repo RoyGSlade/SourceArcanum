@@ -37,5 +37,5 @@ The current public material does not establish which of those functions are impl
 
 Do not use PDFManager as a replacement for a subscription PDF product yet. Before a public alpha, the project needs a product dossier, a real build, documented document-handling and privacy behavior, supported platforms, recovery behavior, screenshots, test documents, a complete demonstration, source, and its MIT license file.
 
-PDFManager belongs to underplain's free-of-charge, source-available, MIT-licensed model when published. Optional paid help from [Crenshaw Systems](../../crenshaw-systems/) may cover installation, customization, deployment, training, or support; it will not create a crippled paid edition.
+PDFManager belongs to underplain's free-of-charge, source-available, MIT-licensed model when published. It will not use a crippled paid edition or hide document ownership behind a subscription tier.
 </section>

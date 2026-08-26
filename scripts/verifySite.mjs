@@ -137,11 +137,36 @@ for (const file of htmlFiles) {
 
 const home = fs.existsSync(routeFile('/')) ? fs.readFileSync(routeFile('/'), 'utf8') : '';
 const primaryNav = home.match(/<nav class="site-nav"[\s\S]*?<\/nav>/i)?.[0] || '';
-for (const label of ['Now', 'underplain', 'BetterFingers', 'GetFast', 'PDFManager', 'Crenshaw Systems', 'Service process', 'Infinite Ages', 'Infinite Ages TTRPG', 'Infinite Ages Evolved', 'Build Log', 'About', 'Contact']) {
+for (const label of ['Now', 'underplain', 'BetterFingers', 'GetFast', 'PDFManager', 'Infinite Ages', 'Infinite Ages TTRPG', 'Infinite Ages Evolved', 'Build Log', 'About', 'Contact']) {
     // Nav labels may be bare (>Label</a>) or wrapped (<span class="nav-label">Label</span></a>).
     if (!primaryNav.includes(`>${label}</a>`) && !primaryNav.includes(`>${label}</span>`)) failures.push(`primary navigation is missing ${label}`);
 }
 if (primaryNav.includes('data-route="projects"')) failures.push('primary navigation still contains the retired Projects item');
+if (/Crenshaw Systems|Service process|data-nav-group="crenshaw-systems"/i.test(primaryNav)) failures.push('primary navigation still promotes the hidden business branch');
+if (!/UNDERPLAIN · FREE SOFTWARE BY DONAVEN CRENSHAW/i.test(home)) failures.push('homepage does not lead with underplain');
+if (!/home-betterfingers-spotlight/i.test(home) || !/assets\/projects\/betterfingers\/showcase\/complete-workflow\.png/i.test(home)) failures.push('homepage is missing the BetterFingers visual spotlight');
+if (!/href="\/projects\/betterfingers\/"/i.test(home)) failures.push('homepage spotlight does not link to BetterFingers');
+if (!/datetime="2026-08-26"/i.test(home)) failures.push('homepage current-state date is stale');
+if (/BRING ME A BUSINESS PROBLEM|Crenshaw Systems/i.test(home)) failures.push('homepage still promotes the hidden business branch');
+
+const betterFingersPage = fs.existsSync(routeFile('/projects/betterfingers/')) ? fs.readFileSync(routeFile('/projects/betterfingers/'), 'utf8') : '';
+if (!/Signed alpha · Windows 11 x64/i.test(betterFingersPage)) failures.push('BetterFingers download card does not identify the signed Windows alpha');
+if (/Unsigned alpha · Windows 11 x64/i.test(betterFingersPage)) failures.push('BetterFingers download card still contradicts the signed release');
+
+for (const route of ['/projects/', '/about/', '/contact/']) {
+    const publicSurface = fs.existsSync(routeFile(route)) ? fs.readFileSync(routeFile(route), 'utf8') : '';
+    if (/Crenshaw Systems|Business systems work|VIEW THE SERVICE PROCESS|READ THE INTAKE DETAILS/i.test(publicSurface)) failures.push(`${route} still promotes the hidden business branch`);
+}
+
+for (const route of ['/underplain/', '/underplain/pdfmanager/', '/licenses/', '/work/']) {
+    const underplainSurface = fs.existsSync(routeFile(route)) ? fs.readFileSync(routeFile(route), 'utf8') : '';
+    if (/Crenshaw Systems|crenshaw-systems\//i.test(underplainSurface)) failures.push(`${route} still exposes the hidden business branch`);
+}
+
+for (const route of ['/crenshaw-systems/', '/crenshaw-systems/process/']) {
+    const hiddenBusinessPage = fs.existsSync(routeFile(route)) ? fs.readFileSync(routeFile(route), 'utf8') : '';
+    if (!/<meta name="robots" content="noindex, follow">/i.test(hiddenBusinessPage)) failures.push(`${route} is retained but not hidden from search indexing`);
+}
 
 if (failures.length) {
     console.error(`\n[FAIL] Built-site verification found ${failures.length} issue(s):`);

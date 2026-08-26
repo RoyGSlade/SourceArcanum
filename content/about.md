@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: "default"
-description: "About Donaven Crenshaw and the systems, software, and creative work he is building."
+description: "About Donaven Crenshaw, underplain, BetterFingers, and the creative work he is building."
 branch: "parent"
 skin: "parent"
 page_kind: "founder"
@@ -16,14 +16,14 @@ hero_scene: "desk"
       <div class="about-founder-copy">
         <p class="section-label">FOUNDER</p>
         <h2>Donaven Crenshaw</h2>
-        <p>I build software and systems that reduce tedious work while keeping people close to their data and decisions. My current work connects accessible communication, local-first tools, workflow improvement, and creative technology.</p>
+        <p>I build free software that reduces tedious work while keeping people close to their data and decisions. My current work connects accessible communication, local-first tools, and creative technology.</p>
       </div>
     </article>
     <article class="noir-card noir-card--lit about-mission">
       <p class="section-label">MISSION</p>
       <div class="reading-text">
         <p>BetterFingers began as an accessibility-driven voice workflow for communicating across applications. That origin still matters: the person using the software should remain in control of what it hears, writes, reviews, and sends.</p>
-        <p>I am building three distinct branches around that mission: underplain for free software, Crenshaw Systems for diagnosis-led business work, and Infinite Ages Software for games, tabletop systems, storytelling, and entertainment.</p>
+        <p>underplain is the main home for that mission and BetterFingers is its leading public release. Infinite Ages remains the creative branch for games, tabletop systems, storytelling, and entertainment.</p>
         <p>I do not want polished language to conceal incomplete proof. Product status, limitations, build notes, and the next piece of evidence belong beside the promise.</p>
       </div>
     </article>

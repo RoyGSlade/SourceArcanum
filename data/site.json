@@ -4,10 +4,10 @@
   "name": "Donaven Crenshaw",
   "shortName": "DC",
   "domain": "https://donavencrenshaw.com",
-  "description": "I build quiet, capable systems that make tedious work disappear, then use that work to create useful software for free.",
+  "description": "underplain is my home for practical free software, led by the BetterFingers local-first dictation app.",
   "location": "Northern Nevada",
   "owner": "donaven-crenshaw",
-  "reviewedAt": "2026-07-31",
+  "reviewedAt": "2026-08-26",
   "publicationStatus": "published",
   "voice": "I",
   "founder": {
@@ -15,11 +15,11 @@
     "name": "Donaven Crenshaw",
     "state": {
       "activeWork": [],
-      "win": "Project facts now import from their owning repositories.",
-      "difficulty": "Migrate the remaining project repositories without duplicating their claims here.",
-      "nextStep": "Integrate the next project source after the BetterFingers pilot.",
+      "win": "BetterFingers Alpha 3 is public with a signed Windows installer and updater bootstrap.",
+      "difficulty": "Friend feedback and wider hardware and application evidence remain before broader release qualification.",
+      "nextStep": "Prove the first Alpha 3-to-later-version update path with real friend-testing evidence.",
       "lastUpdateId": null,
-      "lastUpdatedAt": "2026-08-03"
+      "lastUpdatedAt": "2026-08-26"
     }
   },
   "mission": "Create a subscriptionless open world that gives people the tools they need to build, connect, share, evolve, and enjoy life.",
@@ -28,7 +28,7 @@
     "description": "Free software by Donaven Crenshaw.",
     "status": "active"
   },
-  "branches": ["underplain", "crenshaw-systems", "infinite-ages"],
+  "branches": ["underplain", "infinite-ages"],
   "social": {
     "github": "https://github.com/RoyGSlade"
   },
